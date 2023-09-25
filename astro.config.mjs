@@ -6,6 +6,11 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Lord of the docs",
+      logo: {
+        light: "./src/assets/logo/light.svg",
+        dark: "./src/assets/logo/dark.svg",
+        replacesTitle: true,
+      },
       social: {
         github: "https://github.com/sandyeveliz/lordofthedocs",
         discord: "https://discord.gg/anWb4upY",
@@ -25,13 +30,35 @@ export default defineConfig({
           translations: {
             en: "Start here",
           },
-          autogenerate: { directory: "start"},
+          autogenerate: { directory: "start" },
+        },
+        {
+          label: "Fundamentos",
+          translations: {
+            en: "Funtamentals",
+          },
+          items: [
+            {
+              label: "Programación",
+              translations: {
+                en: "Programing",
+              },
+              autogenerate: { directory: "fundamentals/programing" },
+            },
+            {
+              label: "Diseño UX/UI",
+              translations: {
+                en: "UX/UI Design",
+              },
+              autogenerate: { directory: "fundamentals/design" },
+            },
+          ],
         },
       ],
       customCss: [
-				// Relative path to your custom CSS file
-				'./src/styles/custom.css',
-			],
+        // Relative path to your custom CSS file
+        "./src/styles/custom.css",
+      ],
     }),
   ],
 });
