@@ -1,12 +1,21 @@
 ---
 title: Lord of the docs
 description: Una guia de la web, como usarla y contribuir.
+author: Sandy Veliz
+authorTwitter: "@sandy_veliz"
+lastUpdated: 2023-09-26
 sidebar:
   order: 1
 ---
-import { seo } from "../../../../components/seo.astro";
 
-<seo title={frontmatter.title} title={frontmatter.description}/>
+import { seo } from "../../../../components/seo.astro";
+import { headerCustom } from "../../../../components/headerCustom.astro";
+
+<seo title={frontmatter.title} title={frontmatter.description} />
+
+<headerCustom style="display: block;"
+  author={frontmatter.author}
+  authorTwitter={frontmatter.authorTwitter}/>
 
 LORD OF THE DOCS es una página hecha para ayudar a buscar tutoriales, documentacion, blogpost y mas cosas sobre sobre desarrollo de aplicaciones.
 
@@ -36,6 +45,7 @@ Y todos los demas que quizas ahora no se me ocurren y que podrian ayudar.
 Esta primer versión se hizo con Astro Starlight, y por que con este framework? Por practicidad, si bien podriamos hacer algo mucho mas complejo con React, o Nextjs o Vue o Angular, y que sea mas dinamica, con mas posibilidad de customizar interacciones, agregar una db, etc etc etc. La verdad es que tardaria mucho y requeriría mucho mas esfuerzo que esto, usar Astro Starlight que en si es para documentacion dev (por es o el docs en el titulo), tiene todo armado, no hay que hacer rutas, soportar mdx, i18n nada, ya esta todo hecho... lo que nos da la oportunidad de centrarnos en lo verdaderamente importante... el contenido, empezar a escribirs los Markdown con contenido para empezar a usarlo y si esto va creciendo veremos que hacemos, si no con esto alcanza como un gran diccionarion de contenido.
 
 Que es Astro Starlight?
+
 <iframe
   width="560"
   height="315"
@@ -47,6 +57,7 @@ Que es Astro Starlight?
 ></iframe>
 
 Que es Astro?
+
 <iframe
   width="560"
   height="600"
