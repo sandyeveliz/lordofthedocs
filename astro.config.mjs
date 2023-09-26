@@ -176,5 +176,9 @@ export default defineConfig({
     "./src/styles/custom.css"]
   })],
   output: 'static',
-  adapter: vercel()
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
 });
