@@ -6,16 +6,13 @@ import vercel from '@astrojs/vercel/static';
 export default defineConfig({
   site: 'https://lordofthedocs.vercel.app/',
   integrations: [starlight({
-    title: 'Lord of the docs'
-  })],
-  integrations: [starlight({
     title: "Lord of the docs",
     logo: {
       light: "./src/assets/logo/light.svg",
       dark: "./src/assets/logo/dark.svg",
       replacesTitle: true
     },
-    favicon: './src/assets/logo/logo_icon.svg',
+    favicon: '/favicon.svg',
     social: {
       github: "https://github.com/sandyeveliz/lordofthedocs",
       discord: "https://discord.gg/anWb4upY"
