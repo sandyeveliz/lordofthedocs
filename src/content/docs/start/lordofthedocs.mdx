@@ -1,0 +1,90 @@
+---
+title: Lord of the docs
+description: Una guia de la web, como usarla y contribuir.
+author: Sandy Veliz
+authorTwitter: "@sandy_veliz"
+lastUpdated: 2023-09-26
+sidebar:
+  order: 1
+---
+
+import Header from "../../../components/Header.astro";
+import SeoCustom from "../../../components/SeoCustom.astro";
+
+<SeoCustom title={frontmatter.title} description={frontmatter.description} />
+<Header author={frontmatter.author}
+  authorTwitter={frontmatter.authorTwitter} />
+
+LORD OF THE DOCS es una página hecha para ayudar a buscar tutoriales,
+documentacion, blogpost y mas cosas sobre sobre desarrollo de aplicaciones.
+
+## Por que?
+
+Todos hemos estado en la situacion en la que bucamos tutoriales, blogs, videos,
+etc. sobre un tema en particular, algun bug que no podemos resolver o
+simplemente estamos aprendiendo algo nuevo. Pero una de las grandes dificultades
+que existe hoy es que hay mucho contenido (de todas las calidades) y no sabemos
+cual usar o cual es la mas actualizada, o que creadores de contenido se
+recomienda ver. Y siendo sinseros nos es que falten creadores de contenido, si
+no que falta una forma mas facil de acceder a ellos.
+
+Y ahi es donde entra LORD OF THE DOCS, la idea es hacer una web gratuita donde
+todos podamos contribuir y recomentar blogs, videos, tweets (o X's ja) sobre
+todo lo que sea
+
+## Que temas abarcará
+
+Acá compartiremos sobre todo lo que es IT (Information Technology o Técnnologia
+de la informacion), es decir desarrollo de aplicaciones, pero no solo de
+programacion en si, si no todo lo necesario para poder ser parte de este hermoso
+rubro. Ya lo habran visto en el sidebar pero se puede contribuir y compartir
+sobre:
+
+- Front end
+- Back end
+- DevOps
+- QA
+- Product Managment
+- Diseño UX/UI
+- Seguridad
+- Otros lenguajes de comunicacion (Ingles, Aleman, etc.)
+
+Y todos los demas que quizas ahora no se me ocurren y que podrian ayudar.
+
+## Como esta hecha
+
+Esta primer versión se hizo con Astro Starlight, y por que con este framework?
+Por practicidad, si bien podriamos hacer algo mucho mas complejo con React, o
+Nextjs o Vue o Angular, y que sea mas dinamica, con mas posibilidad de
+customizar interacciones, agregar una db, etc etc etc. La verdad es que tardaria
+mucho y requeriría mucho mas esfuerzo que esto, usar Astro Starlight que en si
+es para documentacion dev (por es o el docs en el titulo), tiene todo armado, no
+hay que hacer rutas, soportar mdx, i18n nada, ya esta todo hecho... lo que nos
+da la oportunidad de centrarnos en lo verdaderamente importante... el contenido,
+empezar a escribirs los Markdown con contenido para empezar a usarlo y si esto
+va creciendo veremos que hacemos, si no con esto alcanza como un gran
+diccionarion de contenido.
+
+Que es Astro Starlight?
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/5u0Ds7wzUeI?si=8OM1v5E3x53OswNH"
+  title="Starlight by Astro"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
+
+Que es Astro?
+
+<iframe
+  width="560"
+  height="600"
+  src="https://www.youtube.com/embed/gxBkghlglTg?si=tLTW8DkH0Wx2-ip7"
+  title="Astro just Launched.... Could it be the ultimate web framework?"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>

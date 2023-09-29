@@ -1,10 +1,21 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
-import vercel from '@astrojs/vercel/static';
+import vercel from "@astrojs/vercel/static";
 
 // https://astro.build/config
+
+export const locales = {
+	root: { label: 'Español', lang: 'es' },
+	en: { label: 'English', lang: 'en' },
+};
 export default defineConfig({
-  site: 'https://lordofthedocs.vercel.app/',
+  site: "https://lordofthedocs.vercel.app/",
+  output: "static",
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true
+    }
+  }),
   integrations: [starlight({
     title: "Lord of the docs",
     logo: {
@@ -12,23 +23,15 @@ export default defineConfig({
       dark: "./src/assets/logo/dark.svg",
       replacesTitle: true
     },
-    favicon: '/favicon.svg',
+    favicon: "/favicon.svg",
     social: {
       github: "https://github.com/sandyeveliz/lordofthedocs",
       discord: "https://discord.gg/anWb4upY"
     },
     editLink: {
-      baseUrl: 'https://github.com/sandyeveliz/lordofthedocs/edit/'
+      baseUrl: "https://github.com/sandyeveliz/lordofthedocs/edit/"
     },
-    defaultLocale: "es",
-    locales: {
-      en: {
-        label: "English"
-      },
-      es: {
-        label: "Español"
-      }
-    },
+    locales: locales,
     sidebar: [{
       label: "Empezar por aquí",
       translations: {
@@ -42,23 +45,9 @@ export default defineConfig({
       translations: {
         en: "Funtamentals"
       },
-      items: [{
-        label: "Programación",
-        translations: {
-          en: "Programing"
-        },
-        autogenerate: {
-          directory: "fundamentals/programing"
-        }
-      }, {
-        label: "Diseño UX/UI",
-        translations: {
-          en: "UX/UI Design"
-        },
-        autogenerate: {
-          directory: "fundamentals/design"
-        }
-      }]
+      autogenerate: {
+        directory: "fundamentals"
+      }
     }, {
       label: "Front End",
       items: [{
@@ -168,14 +157,9 @@ export default defineConfig({
         }
       }]
     }],
+    lastUpdated: true,
     customCss: [
     // Relative path to your custom CSS file
     "./src/styles/custom.css"]
-  })],
-  output: 'static',
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
+  })]
 });

@@ -1,0 +1,34 @@
+---
+const { author = "Sandy", authorTwitter = "Sandy" } = Astro.props;
+---
+
+<style>
+  .container {
+    width: 100%;
+    margin-top: 0 !important;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #696969;
+    margin: 0 0 2rem 0;
+  }
+</style>
+
+<div class="container not-content">
+  <div class="row">
+    <span>Autor: {author}</span>
+
+    <div>
+      <a href={`https://twitter.com/${authorTwitter}`} target="_blank">
+        <span>X: {authorTwitter}</span>
+      </a>
+    </div>
+  </div>
+  <div class="divider"></div>
+</div>
