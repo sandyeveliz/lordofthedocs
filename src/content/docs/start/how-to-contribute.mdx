@@ -1,9 +1,20 @@
 ---
 title: Como contribuir
 description: Como escribir y ayudar a agregar docs
+author: Sandy Veliz
+authorTwitter: "@sandy_veliz"
+lastUpdated: 2023-09-26
 sidebar:
   order: 2
 ---
+import Header from "../../../components/Header.astro";
+
+<Header
+  author={frontmatter.author}
+  authorTwitter={frontmatter.authorTwitter}
+  title={frontmatter.title}
+  description={frontmatter.description}
+/>
 
 Todos podemos ayudar. No todos sabemos todo, asi que si sabes algo que no esta en la documentacion, puedes ayudar a agregarlo.
 

@@ -1,6 +1,26 @@
 ---
-const { author = "Sandy", authorTwitter = "Sandy" } = Astro.props;
+const {
+  author = "Sandy Veliz",
+  authorTwitter = "Sandy",
+  title = "Title",
+  description = "Description",
+} = Astro.props;
 ---
+
+<head>
+  <meta name="description" content={description} />
+  <!-- <meta name="keywords" content="Palabra clave 1, Palabra clave 2, Palabra clave 3" /> -->
+  <meta name="author" content={author} />
+
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content="https://lordofthedocs.vercel.app/only_logo.png" />
+  <link rel="canonical" href="https://lordofthedocs.vercel.app" />
+
+  <meta name="twitter:card" content="https://lordofthedocs.vercel.app/only_logo.png" />
+  <meta name="twitter:site" content={authorTwitter} />
+  <meta name="twitter:creator" content={authorTwitter} />
+</head>
 
 <style>
   .container {

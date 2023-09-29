@@ -9,11 +9,13 @@ sidebar:
 ---
 
 import Header from "../../../components/Header.astro";
-import SeoCustom from "../../../components/SeoCustom.astro";
 
-<SeoCustom title={frontmatter.title} description={frontmatter.description} />
-<Header author={frontmatter.author}
-  authorTwitter={frontmatter.authorTwitter} />
+<Header
+  author={frontmatter.author}
+  authorTwitter={frontmatter.authorTwitter}
+  title={frontmatter.title}
+  description={frontmatter.description}
+/>
 
 LORD OF THE DOCS es una página hecha para ayudar a buscar tutoriales,
 documentacion, blogpost y mas cosas sobre sobre desarrollo de aplicaciones.

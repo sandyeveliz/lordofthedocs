@@ -1,15 +1,30 @@
 ---
 title: Como crear una App
-description:
-  Descripción de como crear una Applicacion y que hay que tener en cuenta
+description: "Crear una aplicación implica definir su propósito y audiencia, elegir las
+tecnologías y plataforma adecuadas, diseñar una interfaz atractiva y funcional,
+desarrollar la aplicación con un código sólido y seguro, probarla
+exhaustivamente, lanzarla en tiendas o en la web, y luego mantenerla,
+actualizarla y ofrecer soporte continuo para asegurar una experiencia de usuario
+de calidad. El proceso requiere planificación, habilidades técnicas y una
+comprensión sólida de las necesidades del usuario."
+author: Sandy Veliz
+authorTwitter: "@sandy_veliz"
+lastUpdated: 2023-09-28
 sidebar:
   order: 1
-  # badge:
-  #   text: New
-  #   variant: tip
-author: Sandy Veliz, @sandy_veliz
-lastUpdated: 2023-09-28
+  badge:
+    text: New
+    variant: tip
 ---
+
+import Header from "../../../components/Header.astro";
+
+<Header
+  author={frontmatter.author}
+  authorTwitter={frontmatter.authorTwitter}
+  title={frontmatter.title}
+  description={frontmatter.description}
+/>
 
 Crear una aplicación implica definir su propósito y audiencia, elegir las
 tecnologías y plataforma adecuadas, diseñar una interfaz atractiva y funcional,
@@ -23,10 +38,11 @@ comprensión sólida de las necesidades del usuario.
 
 Crear una aplicación es un proceso complejo que requiere una variedad de pasos
 diferentes. El desarrollo de software es un proceso iterativo que implica
-diseñar, programar, probar, vender, actualizar y mantener la aplicación, etc etc etc.
+diseñar, programar, probar, vender, actualizar y mantener la aplicación, etc etc
+etc.
 
-Para que te des una idea estos son los pasos que se suelen llevar a cabo para creear una APP, donde vas a ver que
-hay un monton de cosas que no es programar.
+Para que te des una idea estos son los pasos que se suelen llevar a cabo para
+creear una APP, donde vas a ver que hay un monton de cosas que no es programar.
 
 ### Concepto y Planificación
 
@@ -36,73 +52,109 @@ hay un monton de cosas que no es programar.
 - Tecnologías y Plataformas
 
 ### Seleccionar el sistema operativo (iOS, Android, web, etc.).
-- Elegir las tecnologías de desarrollo (por ejemplo, Java, Swift, JavaScript, etc.).
+
+- Elegir las tecnologías de desarrollo (por ejemplo, Java, Swift, JavaScript,
+  etc.).
 - Considerar frameworks y bibliotecas relevantes.
 - Diseño de la Interfaz de Usuario (UI)
 
 ### Crear prototipos de la interfaz de usuario.
+
 - Diseñar la experiencia del usuario (UX).
 - Garantizar la usabilidad y accesibilidad.
 - Desarrollo de la Aplicación
 
 ### Escribir el código fuente de la aplicación.
+
 - Implementar la lógica de negocio y funcionalidades.
 - Realizar pruebas y depuración.
 - Almacenamiento de Datos
 
 ### Diseñar y configurar la base de datos.
+
 - Implementar sistemas de almacenamiento de datos (por ejemplo, SQL, NoSQL).
 - Considerar la seguridad de los datos.
 - Seguridad y Privacidad
 
 ### Implementar medidas de seguridad para proteger la aplicación y los datos.
+
 - Cumplir con las regulaciones de privacidad (por ejemplo, GDPR, HIPAA).
 - Comunicación y Redes
 
 ### Establecer la comunicación con servidores y API externas.
+
 - Considerar la conectividad en línea y sin conexión.
 - Optimizar la velocidad de carga y respuesta.
 - Pruebas y Control de Calidad
 
 ### Realizar pruebas de calidad y rendimiento.
+
 - Solucionar errores y problemas.
 - Garantizar la compatibilidad con múltiples dispositivos y navegadores.
 - Lanzamiento y Distribución
 
 ### Publicar la aplicación (App Store, Google Play, Web).
-- Distribuir la aplicación en la web o intranet (en el caso de aplicaciones empresariales).
+
+- Distribuir la aplicación en la web o intranet (en el caso de aplicaciones
+  empresariales).
 - Planificar estrategias de marketing y promoción.
 - Mantenimiento y Actualizaciones
 
 ### Monitorear el rendimiento y la seguridad continuamente.
+
 - Realizar actualizaciones periódicas con nuevas características y correcciones.
 - Escuchar el feedback de los usuarios y mejorar la aplicación.
 - Soporte Técnico y Atención al Cliente
 
 ### Ofrecer soporte técnico a los usuarios.
+
 - Resolver problemas y responder preguntas.
 - Mejorar la experiencia del usuario.
-
 
 ## Y todo esto lo llevan a cabo distintos sectores
 
 - Diseño
-    - UX
-    - UI
+  - UX
+  - UI
 - Programación
-    - Frontend
-    - Backend
+  - Frontend
+  - Backend
 - QA (Testing)
-    - E2E Testing
+  - E2E Testing
 - Seguridad
-    - Seguridad
-    - Privacidad
+  - Seguridad
+  - Privacidad
 - DevOps
-    - Infraestructura
-    - Despliegue
+  - Infraestructura
+  - Despliegue
 - Marketing
-    - SEO
-    - ASO
-    - SEM
+  - SEO
+  - ASO
+  - SEM
 - Atención al cliente
-    
+
+## No tienen que saberlo todos
+
+Esto quiere decir que no puedes crear una APP solo/a? No, no es eso. Al
+contrario, hay muchos casos de exito donde una sola persona creo una App o hasta
+juegos que les fue muy bien, pero esto depende de la complejidad de la App y de
+la experiencia de la persona. Si es una App chica con pocas funcionalidades y no
+requiere de una gran infraestructura, si es posible que una sola persona lo haga
+(normalmente los MVP), pero si esta APP escala y empieza a crecer y a tener mas
+funcionalidades, usuarios activos, etc, es muy probable que necesites ayuda de
+otras personas.
+
+Hay empresas que directamente contratan por sector, otras que contratan personal
+que se ocupe de varias cosas a la vez, pero lo que si es seguro es que no
+necesitas saber todo para crear una App.
+
+## Que es lo que te gusta?
+
+Lo primero que tienes que hacer es definir que es lo que te gusta, que es lo que
+te apasiona, que es lo que te gustaria hacer. Si te gusta el diseño, pues
+dedicate al diseño, si te gusta la programación, pues dedicate a la
+programación, si te gusta el marketing, pues dedicate al marketing, etc.
+
+En los siguientes documentos vamos a entrar a fondo en los fundamentos de cada uno de los 
+sectores que mencionamos anteriormente, para que puedas tener una idea de que es lo que
+se hace en cada uno de ellos y puedas decidir que es lo que te gusta mas.

@@ -1,14 +1,23 @@
 ---
 title: Estructura de los docs
 description: Descripción de la estructura de los documentos
+author: Sandy Veliz
+authorTwitter: "@sandy_veliz"
+lastUpdated: 2023-09-26
 sidebar:
   order: 3
   # badge:
   #   text: New
   #   variant: tip
-author: Sandy Veliz, @sandy_veliz
-lastUpdated: 2023-09-26
 ---
+import Header from "../../../components/Header.astro";
+
+<Header
+  author={frontmatter.author}
+  authorTwitter={frontmatter.authorTwitter}
+  title={frontmatter.title}
+  description={frontmatter.description}
+/>
 
 La idea es hacer esto lo mas parecido posible a una documentacion de un proyecto real, por lo que intentaremos seguis una estructura.
 En cuanto al contenido en si no importa de que sea siempre y cuando sea sobre IT, como desarrollar un proyecto, etc.
