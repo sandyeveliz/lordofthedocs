@@ -50,38 +50,46 @@ export default defineConfig({
       }
     }, {
       label: "Front End",
+      collapsed: false,
       items: [{
         label: "Angular",
+        collapsed: true,
         autogenerate: {
           directory: "front-end/angular"
         }
       }, {
         label: "React",
+        collapsed: true,
         autogenerate: {
           directory: "front-end/react"
         }
       }, {
         label: "Vue",
+        collapsed: true,
         autogenerate: {
           directory: "front-end/vue"
         }
       }, {
         label: "Qwik",
+        collapsed: true,
         autogenerate: {
           directory: "front-end/qwik"
         }
       }, {
         label: "Svelte",
+        collapsed: true,
         autogenerate: {
           directory: "front-end/svelte"
         }
       }, {
         label: "Astro",
+        collapsed: true,
         autogenerate: {
           directory: "front-end/astro"
         }
       }, {
         label: "Deployment",
+        collapsed: true,
         autogenerate: {
           directory: "front-end/deployment"
         }
@@ -90,21 +98,25 @@ export default defineConfig({
       label: "Back End",
       items: [{
         label: "Django",
+        collapsed: true,
         autogenerate: {
           directory: "back-end/django"
         }
       }, {
         label: "Laravel",
+        collapsed: true,
         autogenerate: {
           directory: "back-end/laravel"
         }
       }, {
         label: "Nodejs",
+        collapsed: true,
         autogenerate: {
           directory: "back-end/nodejs"
         }
       }, {
         label: "Spring boot",
+        collapsed: true,
         autogenerate: {
           directory: "back-end/springboot"
         }
@@ -116,27 +128,32 @@ export default defineConfig({
       },
       items: [{
         label: "Android",
+        collapsed: true,
         autogenerate: {
           directory: "mobile/android"
         }
       }, {
         label: "IOS",
+        collapsed: true,
         autogenerate: {
           directory: "mobile/ios"
         }
       }, {
         label: "Flutter",
+        collapsed: true,
         autogenerate: {
           directory: "mobile/flutter"
         }
       }, {
         label: "React Native",
+        collapsed: true,
         autogenerate: {
           directory: "mobile/react'native"
         }
       }]
     }, {
       label: "DevOps",
+      collapsed: true,
       autogenerate: {
         directory: "devops"
       }
@@ -147,11 +164,13 @@ export default defineConfig({
       },
       items: [{
         label: "UI",
+        collapsed: true,
         autogenerate: {
           directory: "design/ui"
         }
       }, {
         label: "UX",
+        collapsed: true,
         autogenerate: {
           directory: "design/ux"
         }
